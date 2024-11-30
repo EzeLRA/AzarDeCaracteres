@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.header{
+    
+    background-color: lightgrey;
+    
+
+    display: flex;
+    min-height: 10vh;
+    padding: 30px;
+}
+
+.Seccion{
+    max-width: 1200px;
+    margin:0 auto;
+}
+
+.EntradaNumero{
+    background-color: lightgray;
+    /*display: flex;*/
+    border-radius: 25px;
+    justify-content: center;
+    padding: 35px 110px;
+    margin: 25px auto;
+    min-height: 10vh; 
+}
+
+.EntradaNumeroInput{
+    /* asd */
+}
+
+.SalidaCadena{
+    background-color: lightgray;
+    
+    border-radius: 25px;
+    text-align: center;
+
+    padding: 10px;
+}

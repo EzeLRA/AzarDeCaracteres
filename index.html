@@ -3,21 +3,32 @@
 	<head>
 	  <meta charset="UTF-8">
 	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  
 	  <!-- CSS  -->
         <link rel="stylesheet" href="cssStyles.css">
+	  
 	  <title>Prueba</title>
 	</head>
 	<body>
+		
+		<!-- Codigo JavaScript -->
 		<script src="codigoJS.js"></script>
-		<div class="Seccion - EntradaNumero">
-			<label for="numeroEntrada">Seleccione el tamaño de la cadena a generar:</label>
+		
+		<header class="header">
+			<h1>
+				Generador y comprobador de claves
+			</h1>
+		</header>
 
-			<input type="number" id="Numeros" name="Numeros" min="1" max="100" />
+
+		<div class="Seccion - EntradaNumero">
+			<label>Seleccione el tamaño de la cadena a generar:</label>
+			<input class="EntradaNumeroInput" type="number" id="Numeros" name="" min="1" max="100" />
+			<button id="botonMostrar">Generar</button>
 		</div>
 
-		<div class="Seccion - 
-		SalidaCadena">
-			<p id="Resultado"></p>
+		<div class="Seccion - SalidaCadena">
+			<p id="Resultado">Ingrese un valor</p>
 		</div>
 	</body>
 </html>

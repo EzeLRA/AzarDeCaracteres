@@ -1,20 +1,25 @@
+window.addEventListener("load",inicio);
+
 const tamIni = 2;
-//let Tam = prompt("Ingrese una cadena");
-let entradaDatos = document.getElementById("Numeros");
 
-let tam = Number(entradaDatos)
-console.log(tam)
-
-//Caracter basico aleatorio
-const caracterRandom = Math.random().toString(36).substring(tamIni,tamIni+1);
-
-//Cadena basica aleatoria 
-var cadenaRandom = "";
-if(tam>0){
-	cadenaRandom = Math.random().toString(36).substring(tamIni,tamIni+tam)
-}else{
-	cadenaRandom = "Tamaño invalido"
+//Funcion capturador de eventos
+function inicio(){
+	document.querySelector("#botonMostrar").addEventListener("click",generar);
 }
 
-document.getElementById("Resultado").innerHTML = cadenaRandom;
-console.log(cadenaRandom)
+//Funcion generador de claves
+function generar(){
+	let entradaDatos = document.querySelector("#Numeros").value;
+	let tam = Number(entradaDatos);
+
+	//Cadena basica aleatoria 
+	let cadenaRandom = "";
+	if(tam>0){
+		cadenaRandom = Math.random().toString(36).substring(tamIni,tamIni+tam);
+	}else{
+		cadenaRandom = "Tamaño invalido";
+	}
+	
+	
+	document.querySelector("#Resultado").innerHTML = cadenaRandom;
+}
