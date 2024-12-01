@@ -5,6 +5,14 @@ const tamIni = 2;
 //Funcion capturador de eventos
 function inicio(){
 	document.querySelector("#botonMostrar").addEventListener("click",generar);
+	document.querySelector("#botonDescifrar").addEventListener("click",generar);
+}
+
+//Funcion generador de caracteres ASCII
+function generarCaracterASCII() {
+    // Rango de caracteres ASCII imprimibles: 32 (espacio) a 126 (~)
+    let codigoAscii = Math.floor(Math.random() * (126 - 32 + 1)) + 33;
+    return String.fromCharCode(codigoAscii);
 }
 
 //Funcion generador de claves
@@ -14,12 +22,23 @@ function generar(){
 
 	//Cadena basica aleatoria 
 	let cadenaRandom = "";
+
 	if(tam>0){
-		cadenaRandom = Math.random().toString(36).substring(tamIni,tamIni+tam);
+		for(let i=0;i<tam;i++){
+			cadenaRandom += generarCaracterASCII();
+		}
 	}else{
 		cadenaRandom = "Tamaño invalido";
 	}
+	console.log(cadenaRandom);
 	
 	
 	document.querySelector("#Resultado").innerHTML = cadenaRandom;
 }
+
+/*
+//Funcion descifrador de claves
+function descifrar(){
+	Implementar Algoritmo
+}
+*/

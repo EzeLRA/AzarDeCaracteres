@@ -7,10 +7,7 @@
 }
 
 .header{
-    
     background-color: lightgrey;
-    
-
     display: flex;
     min-height: 10vh;
     padding: 30px;
@@ -19,11 +16,10 @@
 .Seccion{
     max-width: 1200px;
     margin:0 auto;
+    background-color: lightgrey;
 }
 
 .EntradaNumero{
-    background-color: lightgray;
-    /*display: flex;*/
     border-radius: 25px;
     justify-content: center;
     padding: 35px 110px;
@@ -36,10 +32,22 @@
 }
 
 .SalidaCadena{
-    background-color: lightgray;
-    
     border-radius: 25px;
     text-align: center;
 
+    padding: 10px;
+}
+
+.EntradaClave{
+    border-radius: 25px;
+    justify-content: center;
+    padding: 5px 110px;
+    margin: 25px auto;
+    min-height: 5vh; 
+}
+
+.intentosDescifrado{
+    border-radius: 25px;
+    text-align: center;
     padding: 10px;
 }
