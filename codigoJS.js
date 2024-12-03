@@ -5,7 +5,7 @@ const tamIni = 2;
 //Funcion capturador de eventos
 function inicio(){
 	document.querySelector("#botonMostrar").addEventListener("click",generar);
-	document.querySelector("#botonDescifrar").addEventListener("click",generar);
+	document.querySelector("#botonDescifrar").addEventListener("click",descifrar);
 }
 
 //Funcion generador de caracteres ASCII
@@ -36,9 +36,13 @@ function generar(){
 	document.querySelector("#Resultado").innerHTML = cadenaRandom;
 }
 
-/*
+
 //Funcion descifrador de claves
 function descifrar(){
-	Implementar Algoritmo
+	let entradaDatos = document.querySelector("#ClaveEntrada").value;
+	let tamanio = entradaDatos.length;
+	let arr = entradaDatos.split('');
+	console.log(arr);
+	let intentos = 0;
+	//Continuar
 }
-*/
